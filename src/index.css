@@ -1,10 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-    background: #0E0E15;
-    font-family: 'Poppins', sans-serif;
+  background: #0e0e15;
+  font-family: "Poppins", sans-serif;
+}
+
+.innerShadow {
+  box-shadow: inset 0px -70px 10px -10px rgba(15, 23, 42, 0.815),
+    inset 0px -100px 10px -10px rgba(15, 23, 42, 0.815),
+    inset 0px -130px 10px -10px rgba(15, 23, 42, 0.815);
 }

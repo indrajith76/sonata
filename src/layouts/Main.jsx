@@ -25,9 +25,12 @@ const Main = () => {
             <p className="text-xs">9</p>
           </div>
           <div className="relative">
+            <p className="border absolute top-0 bottom-0 my-auto right-2 text-xs h-fit border-slate-600 rounded-md py-1 px-2 text-slate-500">
+              /
+            </p>
             <BiSearch className="absolute top-0 bottom-0 my-auto left-2 text-slate-500" />
             <input
-              className="w-[550px] rounded-lg bg-slate-800 text-xs h-9 pl-8"
+              className="w-[550px] rounded-lg bg-slate-800 text-xs h-9 pl-8 pr-9"
               type="text"
               name=""
               id=""
@@ -130,8 +133,9 @@ const Main = () => {
         </ul>
       </div>
 
+      {/* sidebar */}
       <div className="flex">
-        <div className="w-[280px] bg-slate-900 flex flex-col justify-between"> 
+        <div className="w-[280px] bg-slate-900 flex flex-col justify-between">
           <div>
             <ul className="my-8 pl-4 flex flex-col gap-8">
               <li>
@@ -140,7 +144,7 @@ const Main = () => {
                 </Link>
               </li>
               <li>
-                <Link className="text-white text-sm" to="/">
+                <Link to="/tokens" className="text-white text-sm">
                   Tokens
                 </Link>
               </li>
@@ -198,7 +202,7 @@ const Main = () => {
             </ul>
           </div>
         </div>
-        <div className="border w-full">
+        <div className="w-full">
           <Outlet />
         </div>
       </div>
