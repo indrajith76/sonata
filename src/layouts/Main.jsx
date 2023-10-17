@@ -12,10 +12,10 @@ const Main = () => {
     <section className="2xl:container mx-auto">
       <div className="flex justify-between text-white px-4 py-3 border-b border-slate-800">
         <div className="flex items-center gap-7">
-          <div className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img src="/images/icons/logo.png" alt="" />
             <p className="text-2xl font-medium">Sonata</p>
-          </div>
+          </Link>
           <div className="flex items-center gap-1 text-xs bg-slate-800 px-3 py-1 rounded-lg">
             <img className="w-3" src="/images/icons/ethereum.png" alt="" />
             <p>$1680.55</p>
@@ -139,7 +139,7 @@ const Main = () => {
           <div>
             <ul className="my-8 pl-4 flex flex-col gap-8">
               <li>
-                <Link className="text-white text-sm" to="/">
+                <Link className="text-white text-sm" to="/Services">
                   Services
                 </Link>
               </li>
