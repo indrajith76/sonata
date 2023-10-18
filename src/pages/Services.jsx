@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
-    <div className="bg-slate-900 ml-5 px-8 py-8">
+    <div className="bg-[#14121A] ml-5 px-8 py-8">
       <h3 className="text-white text-2xl font-bold mb-5">
         Services on{" "}
         <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#8349FF] to-[#FF0000]">
@@ -13,7 +13,7 @@ const Services = () => {
 
       <div className="grid grid-cols-3 gap-x-12">
         {/* card */}
-        <div className="bg-slate-800 border border-slate-600 rounded-xl px-3 py-4">
+        <div className="bg-[#1D1A23] border border-[#616161] rounded-xl px-3 py-4">
           <p className="text-center text-white text-xs">Marketing</p>
           <img
             className="mx-auto my-14"
@@ -33,7 +33,7 @@ const Services = () => {
             MUST CONTACT FOR PRICING.
           </Link>
         </div>
-        <div className="bg-slate-800 border border-slate-600 rounded-xl px-3 py-4">
+        <div className="bg-[#1D1A23] border border-[#616161] rounded-xl px-3 py-4">
           <p className="text-center text-white text-xs">Listings</p>
           <img
             className="mx-auto my-14"
@@ -50,7 +50,7 @@ const Services = () => {
             marketing@sonata.network
           </Link>
         </div>
-        <div className="bg-slate-800 border border-slate-600 rounded-xl px-3 py-4">
+        <div className="bg-[#1D1A23] border border-[#616161] rounded-xl px-3 py-4">
           <p className="text-center text-white text-xs">Utility Development</p>
           <img
             className="mx-auto my-14"
@@ -83,15 +83,15 @@ const Services = () => {
       </div>
 
       <div className="mt-20 text-white grid grid-cols-3 gap-5">
-        <div className="border bg-slate-800 border-slate-600 p-3 rounded-lg h-32">
+        <div className="border bg-[#1D1A23] border-[#616161] p-3 rounded-lg h-32">
           <p className="text-xs font-bold mb-2">Token Locker</p>
           <p className="text-xs">Lock your liquidity on Sonata.</p>
         </div>
-        <div className="border bg-slate-800 border-slate-600 p-3 rounded-lg h-32">
+        <div className="border bg-[#1D1A23] border-[#616161] p-3 rounded-lg h-32">
           <p className="text-xs font-bold mb-2">Farms</p>
           <p className="text-xs">Create a new Farm on Sonata.</p>
         </div>
-        <div className="border bg-slate-800 border-slate-600 p-3 rounded-lg h-32">
+        <div className="border bg-[#1D1A23] border-[#616161] p-3 rounded-lg h-32">
           <p className="text-xs font-bold mb-2">Opera</p>
           <p className="text-xs">
             Want to launch a quick memecoin?

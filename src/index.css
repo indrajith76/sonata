@@ -10,7 +10,14 @@ body {
 }
 
 .innerShadow {
-  box-shadow: inset 0px -70px 10px -10px rgba(15, 23, 42, 0.815),
-    inset 0px -100px 10px -10px rgba(15, 23, 42, 0.815),
-    inset 0px -130px 10px -10px rgba(15, 23, 42, 0.815);
+  box-shadow: inset 0px -70px 10px -10px #14121A,
+    inset 0px -100px 10px -10px #14121ae8,
+    inset 0px -130px 10px -10px #14121ad2;
+}
+
+.tokenPageTopBg {
+  background: url("/public/images/tokenUpperBg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

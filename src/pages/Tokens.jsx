@@ -36,7 +36,7 @@ const Tokens = () => {
         <div className="relative">
           <BiSearch className="absolute top-0 bottom-0 my-auto left-2 text-slate-500" />
           <input
-            className="w-[550px] rounded-lg bg-slate-800 text-xs h-9 pl-8"
+            className="w-[550px] rounded-lg bg-[#1D1A27] border border-[#414141] text-xs h-9 pl-8"
             type="text"
             name=""
             id=""
@@ -45,10 +45,10 @@ const Tokens = () => {
         </div>
       </div>
 
-      <div className="mx-4 bg-slate-900">
-        <div className="border-t border-l border-r border-slate-700 rounded-t-lg overflow-hidden">
+      <div className="mx-4 bg-[#14121A]">
+        <div className="border-t border-l border-r border-[#222222] rounded-t-lg overflow-hidden">
           <table className="w-full">
-            <thead className="bg-[#000216d0] text-white">
+            <thead className="bg-[#100F14] text-white">
               <tr>
                 <td>
                   <span className="rounded-lg flex items-center justify-between px-4 py-2 text-xs">
@@ -85,13 +85,13 @@ const Tokens = () => {
             <tbody className="text-white">
               {datas.map((data) => (
                 <tr key={data.id}>
-                  <td className="border border-slate-700">
+                  <td className="border border-[#222222]">
                     <p className="flex items-center gap-3 px-4 py-2 text-xs">
                       <img className="w-[23px]" src={data.img} alt="" />
                       {data.title}
                     </p>
                   </td>
-                  <td className="border border-slate-700">
+                  <td className="border border-[#222222]">
                     <p className="flex items-center gap-3 px-4 py-2 text-xs">
                       <img
                         className="w-[14px]"
@@ -101,7 +101,7 @@ const Tokens = () => {
                       ETH
                     </p>
                   </td>
-                  <td className="border border-slate-700">
+                  <td className="border border-[#222222]">
                     <p className="flex items-center gap-3 px-4 py-2 text-xs">
                       <img
                         className="w-[13px]"
@@ -111,7 +111,7 @@ const Tokens = () => {
                       +5,767%
                     </p>
                   </td>
-                  <td className="border border-slate-700">
+                  <td className="border border-[#222222]">
                     <p className="flex items-center gap-3 px-4 py-2 text-xs">
                       <img
                         className="w-[33px]"
@@ -121,7 +121,7 @@ const Tokens = () => {
                       45 $FRX
                     </p>
                   </td>
-                  <td className="border border-slate-700 text-xs px-4">NEW</td>
+                  <td className="border border-[#222222] text-xs px-4">NEW</td>
                 </tr>
               ))}
             </tbody>

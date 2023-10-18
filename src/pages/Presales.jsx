@@ -4,6 +4,7 @@ import Moonereum from "../../public/images/icons/moonereum.png";
 import Haqqnetwork from "../../public/images/icons/haqqnetwork.png";
 import { Link } from "react-router-dom";
 
+
 const Presales = () => {
   const datas = [
     { id: 1, title: "GENERIC", img: Generic },
@@ -13,6 +14,8 @@ const Presales = () => {
     { id: 5, title: "MOONEREUM", img: Moonereum },
     { id: 6, title: "HAQQ NETWORK", img: Haqqnetwork },
   ];
+
+
   return (
     <div>
       <div className="flex items-center justify-between border-b border-slate-800 px-4">
@@ -36,7 +39,7 @@ const Presales = () => {
         <div className="relative">
           <BiSearch className="absolute top-0 bottom-0 my-auto left-2 text-slate-500" />
           <input
-            className="w-[550px] rounded-lg bg-slate-800 text-xs h-9 pl-8"
+            className="w-[550px] rounded-lg bg-[#1D1A27] border border-[#414141] text-xs h-9 pl-8"
             type="text"
             name=""
             id=""
@@ -45,14 +48,14 @@ const Presales = () => {
         </div>
       </div>
 
-      <div className="mx-4 bg-slate-900 p-4 rounded-lg">
+      <div className="mx-4 bg-[#14121A] p-4 rounded-lg">
         <div className="grid grid-cols-3 gap-5 h-[550px] overflow-hidden relative">
           <div className="innerShadow w-full absolute h-full"></div>
           {/* Cards */}
           {datas.map((data) => (
             <div
               key={data.id}
-              className="bg-slate-800 text-white p-4 rounded-lg"
+              className="bg-[#18151E] border border-[#242424] text-white p-4 rounded-lg"
             >
               <img className="w-8 mx-auto" src={data.img} alt="" />
               <p className="text-center text-xl my-2">{data.title}</p>
@@ -60,7 +63,7 @@ const Presales = () => {
               <h6 className="text-2xl text-center my-4">
                 13<span className="text-slate-600 font-semibold"> ETH</span>
               </h6>
-              <div className="bg-slate-700 h-[5px] overflow-hidden rounded-lg">
+              <div className="bg-[#242424] h-[5px] overflow-hidden rounded-lg">
                 <div className="bg-[#C781FF] h-2 w-[25%]"></div>
               </div>
               <div className="text-[13px] flex justify-between items-center mt-1">
