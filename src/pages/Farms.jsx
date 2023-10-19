@@ -1,40 +1,53 @@
+import logo1 from "/public/images/farms/logo1.png";
+import logo2 from "/public/images/farms/logo2.png";
+import logo3 from "/public/images/farms/logo3.png";
+import logo4 from "/public/images/farms/logo4.png";
+import logo5 from "/public/images/farms/logo5.png";
+import logo6 from "/public/images/farms/logo6.png";
+import img1 from "/public/images/farms/img1.png";
+import img2 from "/public/images/farms/img2.png";
+import img3 from "/public/images/farms/img3.png";
+import img4 from "/public/images/farms/img4.png";
+import img5 from "/public/images/farms/img5.png";
+import img6 from "/public/images/farms/img6.png";
+
 
 const Farms = () => {
   const datas = [
     {
       id: 1,
-      img: "/public/images/farms/img1.png",
-      logo: "/public/images/farms/logo1.png",
+      img: img1,
+      logo: logo1,
     },
     {
       id: 2,
-      img: "/public/images/farms/img2.png",
-      logo: "/public/images/farms/logo2.png",
+      img: img2,
+      logo: logo2,
     },
     {
       id: 3,
-      img: "/public/images/farms/img3.png",
-      logo: "/public/images/farms/logo3.png",
+      img: img3,
+      logo: logo3,
     },
     {
       id: 4,
-      img: "/public/images/farms/img4.png",
-      logo: "/public/images/farms/logo4.png",
+      img: img4,
+      logo: logo4,
     },
     {
       id: 5,
-      img: "/public/images/farms/img5.png",
-      logo: "/public/images/farms/logo5.png",
+      img: img5,
+      logo: logo5,
     },
     {
       id: 6,
-      img: "/public/images/farms/img6.png",
-      logo: "/public/images/farms/logo6.png",
+      img: img6,
+      logo: logo6,
     },
   ];
   return (
-    <div className="bg-[#14121A] ml-5 px-8 py-8">
-      <div className="flex justify-between items-end">
+    <div className="bg-[#14121A] lg:ml-5 px-8 py-8 2xl:h-screen">
+      <div className="md:flex justify-between items-end">
         <div>
           <h3 className="text-white text-2xl font-medium">
             <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#DC76FF] to-[#FF6C3E]">
@@ -58,12 +71,12 @@ const Farms = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-9 my-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 my-10">
         {datas.map((data) => (
           <div key={data.id} className="bg-[#131117] text-white rounded-xl overflow-hidden">
             <div className="bg-[#1D1A23]">
               <div>
-                <img src={data.img} alt="" />
+                <img className="w-full" src={data.img} alt="" />
               </div>
               <div className="text-white px-3 py-2">
                 <p className="text-xs text-right">NO REWARDS</p>

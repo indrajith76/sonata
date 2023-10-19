@@ -2,10 +2,11 @@ import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import { BiArrowBack, BiSolidShield } from "react-icons/bi";
 import { RxTarget } from "react-icons/rx";
+import TokenPageLogo from "/public/images/tokenPageLogo.png";
 
 const TokenPages = () => {
   return (
-    <div className="2xl:container mx-auto text-white">
+    <div className=" text-white">
       <Header />
       <div>
         <div className="tokenPageTopBg h-[158px] pl-5 pt-4">
@@ -15,15 +16,15 @@ const TokenPages = () => {
           </Link>
         </div>
 
-        <div className="flex border border-[#3A3A3A] rounded-t-lg border-b-0">
-          <div className="pl-9 pt-10 w-[70%] relative">
+        <div className="flex flex-col items-center lg:items-start lg:flex-row border border-[#3A3A3A] rounded-t-lg border-b-0 2xl:h-screen pb-20 lg:pb-0">
+          <div className="lg:pl-9 pt-10 w-[90%] lg:w-[70%] relative">
             <img
-              src="/public/images/tokenPageLogo.png"
+              src={TokenPageLogo}
               className="w-[93px] h-[93px] absolute -top-16 left-9"
               alt=""
             />
             <div className="flex justify-between items-center">
-              <h1 className="text-[36px] font-medium">BitSynth</h1>
+              <h1 className="text-3xl md:text-[36px] font-medium">BitSynth</h1>
               <div className="flex gap-3">
                 <button className="flex items-center gap-1 text-sm bg-[#1D1A27] px-4 py-1 rounded-md">
                   <BiSolidShield className="text-base" />
@@ -42,10 +43,10 @@ const TokenPages = () => {
               project or startup looking to raise funds for its cryptocurrency
               project offers its tokens for sale directly on a dex, typically
               through a liquidity pool. Investors can participate in the ido by
-              providing liquidity to the pool in exchange for the project's
+              providing liquidity to the pool in exchange for the projects
               tokens.
             </p>
-            <div className="mb-20">
+            <div className="mb-20 overflow-scroll">
               <table className="relative">
                 <tbody className="text-xs">
                   <tr className="border border-[#24242485] border-l-0 border-r-0">
@@ -115,8 +116,8 @@ const TokenPages = () => {
             </div>
           </div>
 
-          <div className="w-[30%] relative">
-            <div className="bg-[#12101C] text-white w-[328px] border border-[#292929] p-4 rounded-xl absolute right-5 -top-16">
+          <div className="lg:w-[30%] relative">
+            <div className="bg-[#12101C] text-white w-[328px] border border-[#292929] p-4 rounded-xl lg:absolute right-5 -top-16">
               <div className="flex items-center justify-between mb-9">
                 <p className="text-sm">Sale ends in</p>
                 <div className="flex gap-1 text-[10px]">

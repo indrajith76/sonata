@@ -6,15 +6,25 @@ import {
   BiLogoDiscordAlt,
 } from "react-icons/bi";
 import Header from "../components/Header";
+import { useState } from "react";
 
 const Main = () => {
+  const [sidebarStatus, setSidebarStatus] = useState(false);
+
   return (
-    <section className="2xl:container mx-auto">
-      <Header />
+    <section className="">
+      <Header
+        sidebarStatus={sidebarStatus}
+        setSidebarStatus={setSidebarStatus}
+      />
 
       {/* sidebar */}
-      <div className="flex" id="sidebar">
-        <div className="w-[280px] bg-[#14121A] flex flex-col justify-between">
+      <div className="flex">
+        <div
+          className={`${
+            sidebarStatus ? "flex" : "hidden"
+          } w-[280px] bg-[#14121A] absolute z-10 top-16 lg:top-0 left-4 lg:left-0 rounded-lg lg:rounded-none lg:relative lg:flex flex-col justify-between`}
+        >
           <div>
             <ul className="my-8 pl-4 flex flex-col gap-8">
               <li>

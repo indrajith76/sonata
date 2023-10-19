@@ -35,11 +35,11 @@ const Presales = () => {
         </button>
       </div>
 
-      <div className="pl-4 py-4">
+      <div className="px-4 py-4">
         <div className="relative">
           <BiSearch className="absolute top-0 bottom-0 my-auto left-2 text-slate-500" />
           <input
-            className="w-[550px] rounded-lg bg-[#1D1A27] border border-[#414141] text-xs h-9 pl-8"
+            className="w-full lg:w-[550px] rounded-lg bg-[#1D1A27] border border-[#414141] text-xs h-9 pl-8"
             type="text"
             name=""
             id=""
@@ -48,8 +48,8 @@ const Presales = () => {
         </div>
       </div>
 
-      <div className="mx-4 bg-[#14121A] p-4 rounded-lg">
-        <div className="grid grid-cols-3 gap-5 h-[550px] overflow-hidden relative">
+      <div className="mx-4 bg-[#14121A] p-4 rounded-lg 2xl:h-screen">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5 h-[550px] overflow-hidden relative">
           <div className="innerShadow w-full absolute h-full"></div>
           {/* Cards */}
           {datas.map((data) => (
