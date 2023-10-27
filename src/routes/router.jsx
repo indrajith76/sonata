@@ -13,9 +13,9 @@ export const router = createBrowserRouter([
     children: [
       { path: "/", element: <Presales /> },
       { path: "/tokens", element: <Tokens /> },
-      { path: "/Services", element: <Services /> },
-      { path: "/Farms", element: <Farms /> },
+      { path: "/services", element: <Services /> },
+      { path: "/farms", element: <Farms /> },
     ],
   },
-  { path: "/TokenPages", element: <TokenPages /> },
+  { path: "/tokenPages", element: <TokenPages /> },
 ]);

@@ -28,7 +28,7 @@ const Main = () => {
           <div>
             <ul className="my-8 pl-4 flex flex-col gap-8">
               <li>
-                <Link className="text-white text-sm" to="/Services">
+                <Link className="text-white text-sm" to="/services">
                   Services
                 </Link>
               </li>
@@ -48,7 +48,7 @@ const Main = () => {
                 </Link>
               </li>
               <li>
-                <Link className="text-white text-sm" to="/Farms">
+                <Link className="text-white text-sm" to="/farms">
                   Staking & Farms
                 </Link>
               </li>

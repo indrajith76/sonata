@@ -3,15 +3,18 @@ import { BiSearch, BiRightArrowAlt } from "react-icons/bi";
 import Generic from "../../public/images/icons/generic.png";
 import Moonereum from "../../public/images/icons/moonereum.png";
 import Haqqnetwork from "../../public/images/icons/haqqnetwork.png";
+import { useState } from "react";
 
 const Presales = () => {
+  const [showTokenStatus, setShowTokenStatus] = useState(false);
+
   const datas = [
-    { id: 1, title: "GENERIC", img: Generic },
-    { id: 2, title: "MOONEREUM", img: Moonereum },
-    { id: 3, title: "HAQQ NETWORK", img: Haqqnetwork },
-    { id: 4, title: "GENERIC", img: Generic },
-    { id: 5, title: "MOONEREUM", img: Moonereum },
-    { id: 6, title: "HAQQ NETWORK", img: Haqqnetwork },
+    { id: 1, title: "GENERIC", img: Generic, href: "/TokenPages" },
+    { id: 2, title: "MOONEREUM", img: Moonereum, href: "/TokenPages" },
+    { id: 3, title: "HAQQ NETWORK", img: Haqqnetwork, href: "/TokenPages" },
+    { id: 4, title: "GENERIC", img: Generic, href: "/TokenPages" },
+    { id: 5, title: "MOONEREUM", img: Moonereum, href: "/TokenPages" },
+    { id: 6, title: "HAQQ NETWORK", img: Haqqnetwork, href: "/TokenPages" },
   ];
 
   return (
@@ -47,8 +50,14 @@ const Presales = () => {
       </div>
 
       <div className="mx-4 bg-[#14121A] p-4 rounded-lg 2xl:h-screen">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5 h-[550px] overflow-hidden relative">
-          <div className="innerShadow w-full absolute h-full"></div>
+        <div
+          className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5 ${
+            showTokenStatus ? "h-full" : "h-[550px]"
+          } overflow-hidden relative`}
+        >
+          {!showTokenStatus && (
+            <div className="innerShadow w-full absolute bottom-0 h-[150px]"></div>
+          )}
           {/* Cards */}
           {datas.map((data) => (
             <div
@@ -80,7 +89,7 @@ const Presales = () => {
               </div>
               <div className="flex my-4">
                 <Link
-                  to="/TokenPages"
+                  to={data.href}
                   className="bg-gradient-to-tl from-[#C781FF] to-[#B14848] p-[2px] rounded-lg w-48 mx-auto"
                 >
                   <div className="flex items-center justify-center bg-black rounded-lg py-1">
@@ -97,12 +106,18 @@ const Presales = () => {
               </p>
             </div>
           ))}
-          <Link
-            to="/"
-            className="absolute bottom-5 left-0 right-0 mx-auto text-center underline text-white text-sm font-medium"
+          <div
+            className={`flex justify-center ${
+              setShowTokenStatus ? "mt-10" : "mt-0"
+            }`}
           >
-            Show more tokens
-          </Link>
+            <button
+              onClick={() => setShowTokenStatus(!showTokenStatus)}
+              className="absolute bottom-5 left-0 right-0 mx-auto text-center underline text-white text-sm font-medium"
+            >
+              {!showTokenStatus ? "Show more tokens" : "Show less tokens"}
+            </button>
+          </div>
         </div>
         <div className="flex flex-col gap-2 justify-center items-center">
           <p className="text-[10px] text-slate-600">
