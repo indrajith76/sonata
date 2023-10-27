@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { BiSearch, BiSolidCircle, BiMenu } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 
-const Header = ( props ) => {
+const Header = (props) => {
   const { sidebarStatus, setSidebarStatus } = props;
   return (
     <>
@@ -10,7 +10,7 @@ const Header = ( props ) => {
         <div className="flex justify-between lg:justify-normal items-center gap-7">
           <div className="flex gap-3 items-center">
             <button
-            id="menuBtn"
+              id="menuBtn"
               className="border p-1 rounded block lg:hidden"
               onClick={() => setSidebarStatus(!sidebarStatus)}
             >
@@ -73,7 +73,7 @@ const Header = ( props ) => {
               className="bg-[#1D1A27] text-xs h-[30px] rounded-lg px-6"
             >
               <option value="" className="flex">
-                <p>Ethereum</p>
+                Ethereum
               </option>
             </select>
           </div>

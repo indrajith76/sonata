@@ -48,7 +48,7 @@ const Main = () => {
                 </Link>
               </li>
               <li>
-                <Link className="text-white text-sm" to="/">
+                <Link className="text-white text-sm" to="/Farms">
                   Staking & Farms
                 </Link>
               </li>

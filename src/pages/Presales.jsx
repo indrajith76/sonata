@@ -1,9 +1,8 @@
+import { Link } from "react-router-dom";
 import { BiSearch, BiRightArrowAlt } from "react-icons/bi";
 import Generic from "../../public/images/icons/generic.png";
 import Moonereum from "../../public/images/icons/moonereum.png";
 import Haqqnetwork from "../../public/images/icons/haqqnetwork.png";
-import { Link } from "react-router-dom";
-
 
 const Presales = () => {
   const datas = [
@@ -14,7 +13,6 @@ const Presales = () => {
     { id: 5, title: "MOONEREUM", img: Moonereum },
     { id: 6, title: "HAQQ NETWORK", img: Haqqnetwork },
   ];
-
 
   return (
     <div>
@@ -81,12 +79,15 @@ const Presales = () => {
                 <p>Liquidity</p>
               </div>
               <div className="flex my-4">
-                <button className="bg-gradient-to-tl from-[#C781FF] to-[#B14848] p-[2px] rounded-lg w-48 mx-auto">
+                <Link
+                  to="/TokenPages"
+                  className="bg-gradient-to-tl from-[#C781FF] to-[#B14848] p-[2px] rounded-lg w-48 mx-auto"
+                >
                   <div className="flex items-center justify-center bg-black rounded-lg py-1">
                     <span className="text-sm">View</span>
                     <BiRightArrowAlt />
                   </div>
-                </button>
+                </Link>
               </div>
               <h4 className="text-center text-2xl font-semibold mb-1">
                 00:20:10:14
@@ -104,7 +105,9 @@ const Presales = () => {
           </Link>
         </div>
         <div className="flex flex-col gap-2 justify-center items-center">
-          <p className="text-[10px] text-slate-600">Want to create your own token?</p>
+          <p className="text-[10px] text-slate-600">
+            Want to create your own token?
+          </p>
           <button className="bg-gradient-to-t from-[#B76FFF] to-[#6B37FF] to-50% text-white text-xs px-3 py-1 rounded-[4px]">
             Launch on Sonata
           </button>
