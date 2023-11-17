@@ -46,7 +46,7 @@ const TokenPages = () => {
               providing liquidity to the pool in exchange for the projects
               tokens.
             </p>
-            <div className="mb-20 overflow-scroll">
+            <div className="mb-20 overflow-scroll no-scrollbar">
               <table className="relative">
                 <tbody className="text-xs">
                   <tr className="border border-[#24242485] border-l-0 border-r-0">

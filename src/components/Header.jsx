@@ -86,15 +86,15 @@ const Header = (props) => {
 
       <div className="flex items-center gap-3 lg:gap-0 justify-between px-4 py-2 border-b border-slate-800 ">
         <p className="text-white font-medium text-xs">Live Projects</p>
-        <ul className="flex gap-1 overflow-auto md:mr-4 lg:mr-0">
-          <li className="bg-[#1D1A27] flex items-center gap-5 py-1 px-3 rounded-[4px] text-white">
+        <ul className="flex gap-1 overflow-auto md:mr-4 lg:mr-0 2xl:w-[95%]">
+          <li className="2xl:w-full bg-[#1D1A27] flex items-center 2xl:justify-between gap-5 py-1 px-3 rounded-[4px] text-white">
             <div className="flex items-center gap-1 text-xs">
               <img className="w-[15px]]" src="/images/icons/feel.png" alt="" />
               <p>FEELS</p>
             </div>
             <p className="text-[9px] border border-[#343434] px-3">+23%</p>
           </li>
-          <li className="bg-[#1D1A27] flex items-center gap-5 py-1 px-3 rounded-[4px] text-white">
+          <li className="2xl:w-full bg-[#1D1A27] flex items-center 2xl:justify-between gap-5 py-1 px-3 rounded-[4px] text-white">
             <div className="flex items-center gap-1 text-xs">
               <img
                 className="w-[15px]]"
@@ -105,14 +105,14 @@ const Header = (props) => {
             </div>
             <p className="text-[9px] border border-[#343434] px-3">+23%</p>
           </li>
-          <li className="bg-[#1D1A27] flex items-center gap-5 py-1 px-3 rounded-[4px] text-white">
+          <li className="2xl:w-full bg-[#1D1A27] flex items-center 2xl:justify-between gap-5 py-1 px-3 rounded-[4px] text-white">
             <div className="flex items-center gap-1 text-xs">
               <img className="w-[15px]]" src="/images/icons/compy.png" alt="" />
               <p>COMPY</p>
             </div>
             <p className="text-[9px] border border-[#343434] px-3">+23%</p>
           </li>
-          <li className="bg-[#1D1A27] flex items-center gap-5 py-1 px-3 rounded-[4px] text-white">
+          <li className="2xl:w-full bg-[#1D1A27] flex items-center 2xl:justify-between gap-5 py-1 px-3 rounded-[4px] text-white">
             <div className="flex items-center gap-1 text-xs">
               <img
                 className="w-[15px]]"
@@ -123,28 +123,28 @@ const Header = (props) => {
             </div>
             <p className="text-[9px] border border-[#343434] px-3">+23%</p>
           </li>
-          <li className="bg-[#1D1A27] flex items-center gap-5 py-1 px-3 rounded-[4px] text-white">
+          <li className="2xl:w-full bg-[#1D1A27] flex items-center 2xl:justify-between gap-5 py-1 px-3 rounded-[4px] text-white">
             <div className="flex items-center gap-1 text-xs">
               <img className="w-[15px]]" src="/images/icons/pepe.png" alt="" />
               <p>pepe</p>
             </div>
             <p className="text-[9px] border border-[#343434] px-3">+23%</p>
           </li>
-          <li className="bg-[#1D1A27] flex items-center gap-5 py-1 px-3 rounded-[4px] text-white">
+          <li className="2xl:w-full bg-[#1D1A27] flex items-center 2xl:justify-between gap-5 py-1 px-3 rounded-[4px] text-white">
             <div className="flex items-center gap-1 text-xs">
               <img className="w-[15px]]" src="/images/icons/herm.png" alt="" />
               <p>HERM</p>
             </div>
             <p className="text-[9px] border border-[#343434] px-3">+23%</p>
           </li>
-          <li className="bg-[#1D1A27] flex items-center gap-5 py-1 px-3 rounded-[4px] text-white">
+          <li className="2xl:w-full bg-[#1D1A27] flex items-center 2xl:justify-between gap-5 py-1 px-3 rounded-[4px] text-white">
             <div className="flex items-center gap-1 text-xs">
               <img className="w-[15px]]" src="/images/icons/stemx.png" alt="" />
               <p>STEMX</p>
             </div>
             <p className="text-[9px] border border-[#343434] px-3">+23%</p>
           </li>
-          <li className="bg-[#1D1A27] flex items-center gap-5 py-1 px-3 rounded-[4px] text-white">
+          <li className="2xl:w-full bg-[#1D1A27] flex items-center 2xl:justify-between gap-5 py-1 px-3 rounded-[4px] text-white">
             <div className="flex items-center gap-1 text-xs">
               <img className="w-[15px]]" src="/images/icons/long.png" alt="" />
               <p>LONG</p>

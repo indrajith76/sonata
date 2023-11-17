@@ -56,13 +56,13 @@ const Main = () => {
             <p className="text-slate-500 text-xs pl-4">Tools for Creators</p>
             <ul className="my-8 pl-4 flex flex-col gap-8">
               <li>
-                <Link className="text-white text-sm" to="/">
-                  Create a Token
+                <Link className="text-white text-sm" to="/create">
+                  Create
                 </Link>
               </li>
               <li>
                 <Link className="text-white text-sm" to="/">
-                  Start a Presale
+                  Token Locker
                 </Link>
               </li>
             </ul>
