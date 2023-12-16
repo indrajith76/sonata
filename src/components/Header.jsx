@@ -17,7 +17,7 @@ const Header = (props) => {
               {sidebarStatus ? <AiOutlineClose /> : <BiMenu />}
             </button>
             <Link to="/" className="flex items-center">
-              <img src="/images/icons/logo.png" alt="" />
+              <img className="w-8 mr-2" src="/images/icons/logo.png" alt="" />
               <p className="text-2xl font-medium">Sonata</p>
             </Link>
           </div>
