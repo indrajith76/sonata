@@ -10,9 +10,8 @@ body {
 }
 
 .innerShadow {
-  box-shadow: inset 0px -70px 10px -10px #14121A,
-    inset 0px -100px 10px -10px #14121ae8,
-    inset 0px -130px 10px -10px #14121ad2;
+  box-shadow: inset 0px -70px 10px -10px #14121a,
+    inset 0px -100px 10px -10px #14121ae8, inset 0px -130px 10px -10px #14121ad2;
 }
 
 .tokenPageTopBg {
@@ -27,20 +26,19 @@ body {
   background-position: center;
   background-size: contain;
 }
-
+ 
 
 @layer utilities {
   @variants responsive {
     /* Hide scrollbar for Chrome, Safari and Opera */
     .no-scrollbar::-webkit-scrollbar {
-        display: none;
+      display: none;
     }
 
     /* Hide scrollbar for IE, Edge and Firefox */
     .no-scrollbar {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
     }
   }
 }
-
