@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { BiSearch, BiSolidCircle, BiMenu } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
-import Marquee from "react-fast-marquee";
+// import Marquee from "react-fast-marquee";
 
 const Header = (props) => {
   const { sidebarStatus, setSidebarStatus } = props;
@@ -87,107 +87,93 @@ const Header = (props) => {
       </div>
 
       <div className="flex items-center gap-3 lg:gap-0 justify-between px-4 py-2 border-b border-slate-800 ">
-        <p className="text-white font-medium text-xs w-24">Live Projects</p>
-        <Marquee
+        <p className="text-white font-medium text-xs w-[90px]">Live Projects</p>
+        {/* <Marquee
+          className="2xl:flex 2xl:justify-end 2xl:w-[95%]"
+          autoFill={true}
           play={true}
           pauseOnHover={true}
-          autoFill={true}
-          className="2xl:flex 2xl:justify-end 2xl:w-[95%]"
+          delay={0}
+          loop={0}
+          onCycleComplete={() => false}
+          onFinish={() => false}
+          onMount={() => false}
         >
-          <ul className="flex gap-1 overflow-auto md:mr-4 lg:mr-0 2xl:w-[95%]">
-            <li className="2xl:w-full bg-[#1D1A27] flex items-center 2xl:justify-between gap-5 py-1 px-3 rounded-[4px] text-white">
-              <div className="flex items-center gap-1 text-xs">
-                <img
-                  className="w-[15px]]"
-                  src="/images/icons/feel.png"
-                  alt=""
-                />
-                <p>FEELS</p>
-              </div>
-              <p className="text-[9px] border border-[#343434] px-3">+23%</p>
-            </li>
-            <li className="2xl:w-full bg-[#1D1A27] flex items-center 2xl:justify-between gap-5 py-1 px-3 rounded-[4px] text-white">
-              <div className="flex items-center gap-1 text-xs">
-                <img
-                  className="w-[15px]]"
-                  src="/images/icons/fraction.png"
-                  alt=""
-                />
-                <p>fraction</p>
-              </div>
-              <p className="text-[9px] border border-[#343434] px-3">+23%</p>
-            </li>
-            <li className="2xl:w-full bg-[#1D1A27] flex items-center 2xl:justify-between gap-5 py-1 px-3 rounded-[4px] text-white">
-              <div className="flex items-center gap-1 text-xs">
-                <img
-                  className="w-[15px]]"
-                  src="/images/icons/compy.png"
-                  alt=""
-                />
-                <p>COMPY</p>
-              </div>
-              <p className="text-[9px] border border-[#343434] px-3">+23%</p>
-            </li>
-            <li className="2xl:w-full bg-[#1D1A27] flex items-center 2xl:justify-between gap-5 py-1 px-3 rounded-[4px] text-white">
-              <div className="flex items-center gap-1 text-xs">
-                <img
-                  className="w-[15px]]"
-                  src="/images/icons/radial.png"
-                  alt=""
-                />
-                <p>RADIAL</p>
-              </div>
-              <p className="text-[9px] border border-[#343434] px-3">+23%</p>
-            </li>
-            <li className="2xl:w-full bg-[#1D1A27] flex items-center 2xl:justify-between gap-5 py-1 px-3 rounded-[4px] text-white">
-              <div className="flex items-center gap-1 text-xs">
-                <img
-                  className="w-[15px]]"
-                  src="/images/icons/pepe.png"
-                  alt=""
-                />
-                <p>pepe</p>
-              </div>
-              <p className="text-[9px] border border-[#343434] px-3">+23%</p>
-            </li>
-            <li className="2xl:w-full bg-[#1D1A27] flex items-center 2xl:justify-between gap-5 py-1 px-3 rounded-[4px] text-white">
-              <div className="flex items-center gap-1 text-xs">
-                <img
-                  className="w-[15px]]"
-                  src="/images/icons/herm.png"
-                  alt=""
-                />
-                <p>HERM</p>
-              </div>
-              <p className="text-[9px] border border-[#343434] px-3">+23%</p>
-            </li>
-            <li className="2xl:w-full bg-[#1D1A27] flex items-center 2xl:justify-between gap-5 py-1 px-3 rounded-[4px] text-white">
-              <div className="flex items-center gap-1 text-xs">
-                <img
-                  className="w-[15px]]"
-                  src="/images/icons/stemx.png"
-                  alt=""
-                />
-                <p>STEMX</p>
-              </div>
-              <p className="text-[9px] border border-[#343434] px-3">+23%</p>
-            </li>
-            <li className="2xl:w-full bg-[#1D1A27] flex items-center 2xl:justify-between gap-5 py-1 px-3 rounded-[4px] text-white">
-              <div className="flex items-center gap-1 text-xs">
-                <img
-                  className="w-[15px]]"
-                  src="/images/icons/long.png"
-                  alt=""
-                />
-                <p>LONG</p>
-              </div>
-              <p className="text-[9px] border border-[#343434] px-3">+23%</p>
-            </li>
-          </ul>
-        </Marquee>
+          <MarqueeContent />
+          <MarqueeContent />
+          <MarqueeContent />
+        </Marquee> */}
+        <div className="2xl:flex 2xl:justify-end overflow-hidden">
+          <div className="marquee flex flex-row">
+            <MarqueeContent />
+          </div>
+        </div>
       </div>
     </>
   );
 };
 
 export default Header;
+
+export function MarqueeContent() {
+  return (
+    <ul className="flex gap-1 md:mr-4 lg:mr-0 2xl:w-[100%]">
+      <li className="ml-1 2xl:w-full bg-[#1D1A27] flex items-center 2xl:justify-between gap-5 py-1 px-3 rounded-[4px] text-white">
+        <div className="flex items-center gap-1 text-xs">
+          <img className="w-[15px]]" src="/images/icons/feel.png" alt="" />
+          <p>FEELS</p>
+        </div>
+        <p className="text-[9px] border border-[#343434] px-3">+23%</p>
+      </li>
+      <li className="2xl:w-full bg-[#1D1A27] flex items-center 2xl:justify-between gap-5 py-1 px-3 rounded-[4px] text-white">
+        <div className="flex items-center gap-1 text-xs">
+          <img className="w-[15px]]" src="/images/icons/fraction.png" alt="" />
+          <p>fraction</p>
+        </div>
+        <p className="text-[9px] border border-[#343434] px-3">+23%</p>
+      </li>
+      <li className="2xl:w-full bg-[#1D1A27] flex items-center 2xl:justify-between gap-5 py-1 px-3 rounded-[4px] text-white">
+        <div className="flex items-center gap-1 text-xs">
+          <img className="w-[15px]]" src="/images/icons/compy.png" alt="" />
+          <p>COMPY</p>
+        </div>
+        <p className="text-[9px] border border-[#343434] px-3">+23%</p>
+      </li>
+      <li className="2xl:w-full bg-[#1D1A27] flex items-center 2xl:justify-between gap-5 py-1 px-3 rounded-[4px] text-white">
+        <div className="flex items-center gap-1 text-xs">
+          <img className="w-[15px]]" src="/images/icons/radial.png" alt="" />
+          <p>RADIAL</p>
+        </div>
+        <p className="text-[9px] border border-[#343434] px-3">+23%</p>
+      </li>
+      <li className="2xl:w-full bg-[#1D1A27] flex items-center 2xl:justify-between gap-5 py-1 px-3 rounded-[4px] text-white">
+        <div className="flex items-center gap-1 text-xs">
+          <img className="w-[15px]]" src="/images/icons/pepe.png" alt="" />
+          <p>pepe</p>
+        </div>
+        <p className="text-[9px] border border-[#343434] px-3">+23%</p>
+      </li>
+      <li className="2xl:w-full bg-[#1D1A27] flex items-center 2xl:justify-between gap-5 py-1 px-3 rounded-[4px] text-white">
+        <div className="flex items-center gap-1 text-xs">
+          <img className="w-[15px]]" src="/images/icons/herm.png" alt="" />
+          <p>HERM</p>
+        </div>
+        <p className="text-[9px] border border-[#343434] px-3">+23%</p>
+      </li>
+      <li className="2xl:w-full bg-[#1D1A27] flex items-center 2xl:justify-between gap-5 py-1 px-3 rounded-[4px] text-white">
+        <div className="flex items-center gap-1 text-xs">
+          <img className="w-[15px]]" src="/images/icons/stemx.png" alt="" />
+          <p>STEMX</p>
+        </div>
+        <p className="text-[9px] border border-[#343434] px-3">+23%</p>
+      </li>
+      <li className="2xl:w-full bg-[#1D1A27] flex items-center 2xl:justify-between gap-5 py-1 px-3 rounded-[4px] text-white">
+        <div className="flex items-center gap-1 text-xs">
+          <img className="w-[15px]]" src="/images/icons/long.png" alt="" />
+          <p>LONG</p>
+        </div>
+        <p className="text-[9px] border border-[#343434] px-3">+23%</p>
+      </li>
+    </ul>
+  );
+}

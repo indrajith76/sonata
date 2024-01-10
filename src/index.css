@@ -25,8 +25,27 @@ body {
   background: url("/public/images/bgPresale.png");
   background-position: center;
   background-size: contain;
+} 
+
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
- 
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden; 
+  animation: marqueeAnimation 20s linear infinite;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
 
 @layer utilities {
   @variants responsive {
