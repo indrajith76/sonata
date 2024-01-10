@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { BiSearch, BiSolidCircle, BiMenu } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
-// import Marquee from "react-fast-marquee";
 
 const Header = (props) => {
   const { sidebarStatus, setSidebarStatus } = props;
@@ -88,24 +87,14 @@ const Header = (props) => {
 
       <div className="flex items-center gap-3 lg:gap-0 justify-between px-4 py-2 border-b border-slate-800 ">
         <p className="text-white font-medium text-xs w-[90px]">Live Projects</p>
-        {/* <Marquee
-          className="2xl:flex 2xl:justify-end 2xl:w-[95%]"
-          autoFill={true}
-          play={true}
-          pauseOnHover={true}
-          delay={0}
-          loop={0}
-          onCycleComplete={() => false}
-          onFinish={() => false}
-          onMount={() => false}
-        >
-          <MarqueeContent />
-          <MarqueeContent />
-          <MarqueeContent />
-        </Marquee> */}
-        <div className="2xl:flex 2xl:justify-end overflow-hidden">
-          <div className="marquee flex flex-row">
-            <MarqueeContent />
+        <div className="marquee">
+          <div className="marquee-content">
+            <div className="item-collection-1">
+              <MarqueeContent />
+            </div>
+            <div className="item-collection-2">
+              <MarqueeContent />
+            </div>
           </div>
         </div>
       </div>

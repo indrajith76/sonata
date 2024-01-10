@@ -25,26 +25,54 @@ body {
   background: url("/public/images/bgPresale.png");
   background-position: center;
   background-size: contain;
-} 
+}
 
-@keyframes marqueeAnimation {
+.marquee {
+  width: 100%;
+
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 5px;
+  animation: marquee 15s linear infinite;
+}
+
+.item-collection-1,
+.item-collection-2 {
+  position: relative; 
+  left: 0%;
+  animation: swap 15s linear infinite;
+}
+
+@keyframes swap {
+  0%,
+  50% {
+    left: 0%;
+  }
+  50.01%,
+  100% {
+    left: 100%;
+  }
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+@keyframes marquee {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0);
   }
   100% {
     transform: translateX(-100%);
   }
-}
-
-.marquee {
-  white-space: nowrap;
-  overflow: hidden; 
-  animation: marqueeAnimation 20s linear infinite;
-}
-
-.marquee:hover {
-  animation-play-state: paused;
-  cursor: pointer;
 }
 
 @layer utilities {
